@@ -3,7 +3,7 @@ Bind: a one-line Python module to mimic os.path.join without reverting to root
 """
 from urllib.parse import quote_plus
 
-def bind(*args, sep='/', url=True, safe='/', **kwargs):
+def bind(*args, sep='/', url=True, safe=':/', **kwargs):
     """
     A function to join
     """
