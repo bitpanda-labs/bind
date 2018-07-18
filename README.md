@@ -7,6 +7,7 @@
 ```python
 from bind import bind
 things_to_bind = ['castable', 'to', 's t r i n g.', 45, '"hi"', 0.25]
+
 # defaults for urllib.parse.quote_plus, leaving these out would change nothing
 kwargs = dict(safe='', encoding=None, errors=None) 
 
@@ -14,7 +15,7 @@ kwargs = dict(safe='', encoding=None, errors=None)
 bind(*things_to_bind, **kwargs)
 'castable/to/s+t+r+i+n+g./45/%22hi%22/0.25'
 
-# turn off urlecoding
+# turn off url encoding
 bind(*things_to_bind, url=False, **kwargs)
 'castable/to/s t r i n g./45/"hi"/0.25'
 
@@ -22,13 +23,13 @@ bind(*things_to_bind, url=False, **kwargs)
 bind(things_to_bind, url=False, **kwargs)
 'castable/to/s t r i n g./45/"hi"/0.25'
 
-# change separator --- note that it strips the other . in item[2]
+# change separator --- note that it strips the other . in things_to_bind[2]
 bind(*things_to_bind, sep='.')
 'castable.to.s+t+r+i+n+g.45.%22hi%22.0.25'
 
-# pointless but possible
+# pointless but possible, and will strip W, H and Y from items in iterable!
 bind(*things_to_bind, sep='WHY', url=True, **kwargs)
 'castableWHYtoWHYs+t+r+i+n+g.WHY45WHY%22hi%22WHY0.25'
 ```
 
-Keyword arguments are passed to[`urllib.parse.quote_plus`](https://docs.python.org/3/library/urllib.parse.html#urllib.parse.quote_plus)
+Aside from `url=bool` and `sep=str`, all keyword arguments are passed to [`urllib.parse.quote_plus`](https://docs.python.org/3/library/urllib.parse.html#urllib.parse.quote_plus)
