@@ -33,3 +33,21 @@ bind(*things_to_bind, sep='WHY', url=True, **kwargs)
 ```
 
 Aside from `url=bool` and `sep=str`, all keyword arguments are passed to [`urllib.parse.quote_plus`](https://docs.python.org/3/library/urllib.parse.html#urllib.parse.quote_plus)
+
+## Tests (600% coverage)
+
+```bash
+coverage run --source='.' -m unittest discover
+coverage report --omit=setup.py
+```
+
+```
+Name                Stmts   Miss  Cover
+---------------------------------------
+bind/__init__.py        1      0   100%
+bind/bind.py            2      0   100%
+tests/__init__.py       0      0   100%
+tests/tests.py         22      0   100%
+---------------------------------------
+TOTAL                  25      0   100%
+```

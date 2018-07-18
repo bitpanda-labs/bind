@@ -3,7 +3,7 @@
 from distutils.core import setup
 
 setup(name='bind',
-      version='1.3.1',
+      version='2.0.0',
       description='A function for binding strings with a separator',
       author='Danny McDonald',
       author_email='daniel.mcdonald@bitpanda.com',
