@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/bitpanda-labs/bind.svg?branch=master)](https://travis-ci.org/bitpanda-labs/bind)
+
 # bind
 
 > bind is a one-line function that joins strings in a way we often need

@@ -1,0 +1,15 @@
+language: python
+python:
+  - '3.6'
+stages:
+  - build
+  - test
+jobs:
+  include:
+    - stage: build
+      script:
+        - pip install -r requirements.txt
+        - python setup.py install
+    - stage: test
+      script:
+        - python -m unittest tests/tests.py
