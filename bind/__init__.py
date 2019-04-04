@@ -1,1 +1,1 @@
-from bind.bind import bind
+from .bind import bind
