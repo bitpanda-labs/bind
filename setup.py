@@ -7,6 +7,6 @@ setup(name='bind',
       description='A function for binding strings with a separator',
       author='Danny McDonald',
       author_email='daniel.mcdonald@bitpanda.com',
-      url='https://www.bitpanda.com',
+      url='https://github.com/bitpanda-labs/bind',
       packages=['bind'],
      )
