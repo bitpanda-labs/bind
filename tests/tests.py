@@ -4,6 +4,7 @@ from bind import bind
 
 BIND_DATA = ['castable', 's t r i n g.', 45, '"hi"', 0.25, '/slash.', 'http://']
 
+
 class TestBind(unittest.TestCase):
 
     def test_default(self):
