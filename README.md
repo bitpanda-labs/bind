@@ -3,7 +3,7 @@
 # bind
 
 <!--- Don't edit the version line below manually. Let bump2version do it for you. -->
-> Version 2.1.0
+> Version 3.0.0
 
 > bind is a function that joins strings in a way we often need
 
