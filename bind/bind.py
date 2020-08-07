@@ -18,7 +18,7 @@ def bind(*args: Union[str, list, set, tuple],
         parts = [i for i in args if i is not False and i is not None]
 
     if url:
-        processed_parts = (quote_plus(str(arg).strip(sep), safe=safe, encoding=encoding, errors=errors)  # type: ignore
+        processed_parts = (quote_plus(str(arg).strip(sep), safe=safe, encoding=encoding, errors=errors)
                            for arg in parts)
     else:
         processed_parts = (str(arg).strip(sep) for arg in parts)
