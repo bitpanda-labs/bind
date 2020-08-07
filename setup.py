@@ -9,7 +9,7 @@ def read(fname):
 
 setup(
       name='bind',
-      version='3.0.0',  # DO NOT EDIT THIS LINE MANUALLY. LET bump2version UTILITY DO IT
+      version='version='3.0.0'',  # DO NOT EDIT THIS LINE MANUALLY. LET bump2version UTILITY DO IT
       description='A function for binding strings with a separator',
       author='Bitpanda GmbH',
       author_email='nosupport@bitpanda.com',
